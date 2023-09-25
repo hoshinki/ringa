@@ -10,7 +10,7 @@ const api = Router();
 
 api.get("/hello", (req, res) => {
 
-  console.log(req);
+  console.log(req.socket);
   return res.status(200).send({ message: ima+ outerServer});
 });
 
