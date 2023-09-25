@@ -83,11 +83,7 @@ function getAllEnvars() {
 
 function testWrite() {
     const content = "godaa";
-    var testPath = __dirname;
-    if (!testPath.endsWith("/")) {
-        testPath = __dirname + "/";
-    }
-    testPath += "zaza.txt";
+    var testPath = "zaza.txt";
     try {
         fs.writeFileSync(testPath, content);
         return "base-ok";
