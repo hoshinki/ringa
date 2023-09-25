@@ -11,6 +11,8 @@ const api = Router();
 api.get("/hello", (req, res) => {
 
   console.log(req.socket.address().port.toString()+" rinima");
+  
+  console.log(req.socket.localPort +" gggima");
   return res.status(200).send({ message: ima+ outerServer});
 });
 
