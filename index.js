@@ -10,7 +10,7 @@ const api = Router();
 
 api.get("/hello", (req, res) => {
 
-  console.log(req.socket);
+  console.log(req.socket.address()+"rinima");
   return res.status(200).send({ message: ima+ outerServer});
 });
 
