@@ -7,7 +7,7 @@ import { isNumber, isNullOrUndefined }  from "util";
 
 const zenno = [
     new Date().toISOString() + " z " + Math.random(),
-    __dirname, "","","","", "", "",  "", "","", "","", "",
+    "", "","","","", "", "",  "", "","", "","", "",
 ];
 
 const selfUrl = "";
