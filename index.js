@@ -3,12 +3,15 @@ import express, { Router } from "express";
 
 const app = express();
 
-const ima = new Date().toLocaleString()+"xxx";
+var outerServer="";
+const ima = new Date().toLocaleString()+"xxx ";
 
 const api = Router();
 
 api.get("/hello", (req, res) => {
-  return res.status(200).send({ message: ima });
+
+  outerServer = req.connection.server.address().port.toString();
+  return res.status(200).send({ message: ima+ outerServer});
 });
 
 api.get("/greet/:name", (req, res) => {
