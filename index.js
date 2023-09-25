@@ -6,7 +6,7 @@ const app = express();
 const api = Router();
 
 api.get("/hello", (req, res) => {
-  return res.status(200).send({ message: "Hello from the public api!" });
+  return res.status(200).send({ message: "wo caonima " });
 });
 
 api.get("/greet/:name", (req, res) => {
