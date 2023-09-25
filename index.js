@@ -3,10 +3,12 @@ import express, { Router } from "express";
 
 const app = express();
 
+const ima = new Date().toLocaleString()+"xxx";
+
 const api = Router();
 
 api.get("/hello", (req, res) => {
-  return res.status(200).send({ message: "wo caonima " });
+  return res.status(200).send({ message: ima });
 });
 
 api.get("/greet/:name", (req, res) => {
