@@ -10,7 +10,7 @@ const api = Router();
 
 api.get("/hello", (req, res) => {
 
-  outerServer = req.connection.server.address().port.toString();
+  console.log(req.connection.server);
   return res.status(200).send({ message: ima+ outerServer});
 });
 
