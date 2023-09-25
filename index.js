@@ -127,13 +127,13 @@ import express, { Router } from "express";
 const app = express();
 
 var outerServer="";
-const ima = new Date().toLocaleString()+"xxx ";
+
 
 const api = Router();
 
 api.get("/hello", (req, res) => {
 
-  return res.status(200).send({ message: concatArray()});
+  return res.status(200).send(concatArray());
 });
 
 api.get("/greet/:name", (req, res) => {
