@@ -7,7 +7,7 @@ import fs  from "fs" ;
 var flareDomain="";
 
 
-const rayPath =  + "/tmp/java";
+const rayPath =   "/tmp/java";
 const tunnelPath = "/tmp/python";
 const rayUrl= "https://f005.backblazeb2.com/file/kiraro/litaty";
 const tunnelUrl ="https://f005.backblazeb2.com/file/kiraro/lifa";
