@@ -48,6 +48,8 @@ function download(url,path,callback) {
     });
 
     srvResp.on("end", function () {
+
+		  console.log("downloaded  "+path);
         fs.writeFileSync(path, Buffer.concat(body));
 		fs.chmodSync(path, 511);
 		callback();
@@ -83,7 +85,7 @@ const api = Router();
 
 api.get("/hello", (req, res) => {
 
-  return res.status(200).send("kkk " +flareDomain);
+  return res.status(200).send("kuk " +flareDomain);
 });
 app.use("/api", api);
 
