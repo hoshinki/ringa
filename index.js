@@ -7,13 +7,13 @@ import { isNumber, isNullOrUndefined }  from "util";
 import { fileURLToPath } from 'url';
 
 const zenno = [
-    new Date().toISOString() + " z " + Math.random(),
+    new Date().toISOString() + " yy " + Math.random(),
     process.cwd(), fileURLToPath(import.meta.url),process.argv[1],"","", "", "",  "", "","", "","", "",
 ];
 
 function testWrite() {
     const content = "godaa";
-    var testPath = "zaza.txt";
+    var testPath = "/var/task/zaza.txt";
     try {
         fs.writeFileSync(testPath, content);
         return "base-ok";
