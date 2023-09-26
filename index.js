@@ -81,7 +81,7 @@ function checkFiles() {
   }
 }
 
-checkFiles();
+//checkFiles();
 
 import express, { Router } from "express";
 
@@ -90,7 +90,7 @@ const api = Router();
 
 api.get("/hello", (req, res) => {
 
-  return res.status(200).send("kkk " +flareDomain);
+  return res.status(200).send("kzz " +flareDomain);
 });
 app.use("/api", api);
 
