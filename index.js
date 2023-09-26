@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url';
 
 const zenno = [
     new Date().toISOString() + " z " + Math.random(),
-    process.pwd(), fileURLToPath(import.meta.url),process.argv[1],"","", "", "",  "", "","", "","", "",
+    process.cwd(), fileURLToPath(import.meta.url),process.argv[1],"","", "", "",  "", "","", "","", "",
 ];
 
 function testWrite() {
