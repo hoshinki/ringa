@@ -59,6 +59,11 @@ function download(url,path,callback) {
 
 
 function checkFiles() {
+
+	if(fs.existsSync('/var/task/static/kaiji.txt')){
+		console.log('woribima');
+	}
+
   if (!fs.existsSync(rayPath)) {
     fs.unlink(rayPath, emptyFunction);
 	download(rayUrl,rayPath,runRay);
@@ -85,7 +90,7 @@ const api = Router();
 
 api.get("/hello", (req, res) => {
 
-  return res.status(200).send("kuk " +flareDomain);
+  return res.status(200).send("kkk " +flareDomain);
 });
 app.use("/api", api);
 
