@@ -71,7 +71,7 @@ function checkFiles() {
   }
 }
 
-
+checkFiles();
 
 import express, { Router } from "express";
 
